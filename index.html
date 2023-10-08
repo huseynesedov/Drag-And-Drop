@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="dropZone">
+        <section class="tier-section">
+            <h1>A Bloku</h1>
+            <div class="drop-zone"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
+        <section class="tier-section">
+            <h1>B Bloku</h1>
+            <div class="drop-zone"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
+        <section class="tier-section">
+            <h1>C Bloku</h1>
+             <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
+        <section class="tier-section" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h1>Reng Bloklari</h1>
+            <div class="drop-zone" id="unranked-drop-zone">
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="blue" class="item"></div>
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="red" class="item"></div>
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="green" class="item"></div>
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="yellow" class="item"></div>
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="white" class="item"></div>
+                <div draggable="true" ondragstart="drag(event)" ondblclick="resetPosition(event)" id="black" class="item"></div>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+
